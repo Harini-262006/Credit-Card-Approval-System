@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Credit Card Approval Prediction</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="/">Credit Card Approval System</a>
+
+        <div>
+
+            <a href="/login" class="btn btn-light me-2">Login</a>
+
+            <a href="/register" class="btn btn-warning">Register</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container mt-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+
+            <h1 class="display-4 fw-bold">
+                Credit Card Approval Prediction
+            </h1>
+
+            <p class="lead mt-4">
+                This application uses Machine Learning algorithms to predict
+                whether a customer is eligible for a credit card based on
+                financial and personal information.
+            </p>
+
+            <ul class="mt-4">
+                <li>✔ Logistic Regression</li>
+                <li>✔ Decision Tree</li>
+                <li>✔ Random Forest</li>
+                <li>✔ XGBoost</li>
+            </ul>
+
+            <a href="/login" class="btn btn-primary btn-lg mt-4">
+                Get Started
+            </a>
+
+        </div>
+
+        <div class="col-md-6 text-center">
+
+            <img src="{{ url_for('static', filename='images/credit_card.png') }}"
+                 class="img-fluid"
+                 width="450"
+                 alt="Credit Card">
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="text-center mt-5 mb-3">
+
+    <hr>
+
+    <p>
+        © 2026 Credit Card Approval Prediction System
+    </p>
+
+</footer>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
